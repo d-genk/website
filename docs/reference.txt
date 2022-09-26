@@ -1,0 +1,7 @@
+12-ssda-xml-parser: Contains function parse_xml_v2, which will transform the xml version of a volume transcription into a dataframe. Use this to visually inspect standardized data and/or to prepare a cleaned transcription for the application of a trained spaCy model.
+
+31-collate-xml-entities-spans: Contains function genSpaCyInput, which combines with a function from 51 to transform Prodigy output into spaCy input. Use these functions together to prepare Prodigy annotations to be used to train a model.
+
+51-data-preprocessing: Contains function xml_to_jsonl, which will transform the xml version of a volume transcription into jsonl. Use this to prepare a cleaned transcription for annotation in Prodigy. Also contains function prodigy_output_to_collated_df, which performs one of the steps required to transform Prodigy output into spaCy input.
+
+52-unstructured-to-markup: Doesn't contain any directly useful models, but does contain various pieces of code that might be useful in thinking about how best to transform the rest of the unstructured transcriptions into XML.
